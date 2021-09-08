@@ -1,0 +1,26 @@
+.control{
+  margin-bottom: 300px;
+  &__title{
+    margin-bottom: 100px;
+    &::before{
+      width: 111px;
+    height: 94px;
+    top: -58px;
+    left: 51%;
+    }
+  }
+}
+.control-item{
+  max-width: 300px;
+  &__icon{
+    margin-bottom: 37px;
+  }
+  &__title{
+    font: 500 36px / 57px $font-default;
+    margin-bottom: 10px;
+  }
+  &__text{
+    font: 400 18px / 28px $font-default;
+    opacity: .6;
+  }
+}

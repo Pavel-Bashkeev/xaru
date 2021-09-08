@@ -1,0 +1,15 @@
+@include font-face('Roboto', '../fonts/Roboto-Black', 900);
+@include font-face('Roboto', '../fonts/Roboto-Bold', 700);
+@include font-face('Roboto', '../fonts/Roboto-Medium', 500);
+@include font-face('Roboto', '../fonts/Roboto-Regular', 400);
+
+
+
+@include font-face('Neue Helvetica', '../fonts/HelveticaNeueCyr-Black', 900);
+@include font-face('Neue Helvetica', '../fonts/HelveticaNeueCyr-Bold', 700);
+@include font-face('Neue Helvetica', '../fonts/HelveticaNeueCyr-Medium', 500);
+@include font-face('Neue Helvetica', '../fonts/HelveticaNeueCyr-MediumItalic', 500, 'italic');
+@include font-face('Neue Helvetica', '../fonts/HelveticaNeueCyr-Roman', 400);
+@include font-face('Neue Helvetica', '../fonts/HelveticaNeueCyr-Light', 300);
+@include font-face('Neue Helvetica', '../fonts/HelveticaNeueCyr-Thin', 100);
+

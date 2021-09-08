@@ -1,0 +1,13 @@
+.header{
+  padding: 50px 0 0;
+  .logo{
+    &__img{
+      margin-right: 5px;
+    }
+    &__name{
+    font: 900 42px / 49px $font-second;
+    text-transform: uppercase;
+  }
+  }
+  
+}

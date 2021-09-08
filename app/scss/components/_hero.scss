@@ -1,0 +1,45 @@
+.hero{
+  padding-top: 153px;
+  margin-bottom: 300px;
+  &-right{
+    &__img{
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+.hero-descr{
+  &__subtitle{
+    font: 'italic' 500 36px / 36px $font-default;
+    margin-bottom: 32px;
+    color: $accent;
+    position: relative;
+    &::before{
+      content: '';
+      width: 37px;
+      height: 4px;
+      background-color: $accent;
+      clip-path: polygon(5% 0%, 100% 0, 95% 100%, 0% 100%);
+      margin-right: 5px;
+    }
+  }
+  &__title{
+    font: 700 96px/96px $font-default;
+    max-width: 760px;
+    margin-bottom: 55px;
+    &--accent{
+      color: $accent;
+    }
+  }
+  &__text{
+    font: 400 24px / 38px $font-default;
+    opacity: 0.6;
+    margin-bottom: 70px;
+  }
+}
+.hero-decor{
+  top: -50px;
+  z-index: 1;
+  right: 25px;
+  filter: blur(150px);
+}
