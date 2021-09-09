@@ -269,7 +269,8 @@
 @media (max-width: 420px) {
   .hero {
     padding-top: 50px;
-}
+  }
+
   .card-content__decor {
     min-height: 350px;
     width: 90%;
@@ -310,9 +311,11 @@
   .card {
     margin-bottom: 50px;
   }
+
   .steps {
     margin-bottom: 200px;
-}
+  }
+
   .dashboard-decor__icon {
     width: 320px;
     height: 420px;
@@ -376,11 +379,22 @@
   .iban {
     margin-bottom: 150px;
   }
+
   .hero-decor {
     right: 0px;
     width: 300px;
     height: 300px;
-}
+  }
+
+  .modal-form {
+    .form {
+      max-width: 300px;
+      padding: 10px;
+      &__message {
+        height: 200px;
+      }
+    }
+  }
 }
 
 @media (max-width: 375px) {

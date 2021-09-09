@@ -7,6 +7,7 @@ btnLink.forEach(item => {
 
 function showModalForm() {
   modalForm.classList.toggle('hide');
+  document.body.classList.add('hidden')
 }
 
 modalForm.addEventListener('click', function(e){
@@ -16,5 +17,6 @@ modalForm.addEventListener('click', function(e){
   let itsFormElem = form.contains(target);
   if(!itsForm && !itsFormElem){
     modalForm.classList.add('hide');
+    document.body.classList.remove('hidden')
   }
 })
