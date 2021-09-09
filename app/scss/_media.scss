@@ -264,6 +264,9 @@
       padding-right: 20px;
     }
   }
+  #particles-js{
+    display: none;
+  }
 }
 
 @media (max-width: 420px) {
@@ -398,6 +401,7 @@
   .close-btn {
     transform: translateX(0);
 }
+
 }
 
 @media (max-width: 375px) {
