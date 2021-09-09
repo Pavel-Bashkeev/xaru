@@ -215,7 +215,7 @@
   }
 
   .hero {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
   }
 
   .section-title {
@@ -267,6 +267,9 @@
 }
 
 @media (max-width: 420px) {
+  .hero {
+    padding-top: 50px;
+}
   .card-content__decor {
     min-height: 350px;
     width: 90%;
@@ -301,13 +304,15 @@
   }
 
   .control {
-    margin-bottom: 200px;
-  }
-
-  .card {
     margin-bottom: 150px;
   }
 
+  .card {
+    margin-bottom: 50px;
+  }
+  .steps {
+    margin-bottom: 200px;
+}
   .dashboard-decor__icon {
     width: 320px;
     height: 420px;
@@ -329,7 +334,7 @@
   }
 
   .dashboard {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 
   .currencies-item:not(:last-child) {
