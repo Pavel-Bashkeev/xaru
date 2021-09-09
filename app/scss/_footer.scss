@@ -1,0 +1,38 @@
+.footer {
+  background-color: #0C0C23;
+  position: relative;
+  z-index: 1;
+  padding: 47px 0 26px;
+
+  .container {
+    align-items: flex-end;
+
+    .logo {
+      transform: translateY(13px);
+    }
+  }
+
+  &-copy {
+    &__text {
+      font: 400 14px/16px $font-second;
+      opacity: .6;
+    }
+  }
+
+  &-list {
+    &__item {
+      &:not(:last-child) {
+        margin-right: 74px;
+      }
+    }
+
+    &__link {
+      font: 400 18px / 21px $font-second;
+      opacity: .6;
+      transition: opacity .3s ease-in-out;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}

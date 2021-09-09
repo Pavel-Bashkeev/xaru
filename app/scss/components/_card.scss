@@ -1,0 +1,110 @@
+.card {
+  margin-bottom: 300px;
+  &__title {
+    margin-bottom: 70px;
+
+    &::before {
+      width: 133px;
+      height: 112px;
+      left: 45px;
+      top: -28px;
+    }
+  }
+}
+
+.card-content {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 100px;
+    }
+
+    &-icon {
+      margin-right: 35px;
+    }
+
+    &-descr {
+      max-width: 550px;
+    }
+
+    &-text {
+      font: 400 24px / 38px $font-default;
+
+      &--accent {
+        font: 500 28px / 44px $font-default;
+        ;
+        color: $accent;
+      }
+    }
+  }
+}
+
+.card-content__decor {
+  &-icon {
+    filter: blur(100px);
+  }
+
+  &-img {
+    bottom: 0;
+  }
+
+  &-img.card-bottom {
+    bottom: 102px;
+    right: 0;
+    z-index: 1;
+  }
+
+  &-img.card-top {
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  &-img.decor-dol-1 {
+    width: 18px;
+    height: 28px;
+    top: 200px;
+    right: 55px;
+    z-index: 1;
+  }
+
+  &-img.decor-dol-2 {
+    width: 40px;
+    height: 61px;
+    bottom: 200px;
+    right: 10px;
+    z-index: 1;
+  }
+
+  &-img.decor-dol-3 {
+    width: 40px;
+    height: 61px;
+    top:80px;
+  left: 78px;
+  z-index: 1;
+  }
+
+  &-img.decor-dol-4 {
+    width: 50px;
+    height: 78px;
+    left: -17px;
+    top: 12px;
+    z-index: 1;
+  }
+
+  &-img.decor-euro-1 {
+    width: 35px;
+    height: 47px;
+    z-index: 1;
+    top: -35px;
+    right: 100px;
+  }
+
+  &-img.decor-euro-2 {
+    width: 50px;
+    height: 78px;
+    z-index: 1;
+    bottom: 150px;
+    left:30px;
+  }
+
+}

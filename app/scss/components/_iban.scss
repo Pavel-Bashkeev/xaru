@@ -1,0 +1,83 @@
+.iban {
+  margin-bottom: 300px;
+}
+
+.iban-content {
+  max-width: 755px;
+
+
+  &__title {
+    margin-bottom: 45px;
+
+    &::after {
+      margin-right: auto;
+    }
+
+    &::before {
+      left: 30px;
+      top: -20px;
+      width: 154px;
+      height: 130px;
+    }
+  }
+
+  &__text {
+    font: 400 24px / 38px $font-default;
+    margin-bottom: 55px;
+    opacity: 0.6;
+  }
+}
+
+.currencies {
+  &-item {
+    &:not(:last-child) {
+      margin-right: 90px;
+    }
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      width: 44px;
+      height: 44px;
+      @extend %bg-cover;
+      background-image: url('../images/dest/sprite.svg#check-box');
+      margin-right: 26px;
+      display: block;
+      margin-top: -2px;
+    }
+
+    &__text {
+      font: 700 24px / 38px $font-default;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.iban-decor {
+  max-width: 788px;
+  padding: 100px 0 0;
+  z-index: 1;
+
+  &__icon {
+    z-index: 1;
+    right: 105px;
+    bottom: -92px;
+    filter:blur(150px)
+
+  }
+
+  &__bg {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__item {
+    width: 544px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+}

@@ -1,0 +1,41 @@
+.dashboard{
+margin-bottom: 300px;
+}
+.dashboard-decor {
+  &__icon{
+    filter: blur(100px);
+    z-index: 1;
+  }
+  &__img{
+    z-index: 2;
+    max-width: 714px;
+    left: 0;
+    top: 100px;
+  }
+  &__diagra{
+    z-index: 3;
+    max-width: 273px;
+    right: 60px;
+    bottom: 117px;
+  }
+}
+.dashboard-content{
+  max-width: 857px;
+  transform: translateY(-60px);
+  &__title{
+    margin-bottom: 105px;
+    &::after{
+      margin-right: auto;
+    }
+    &::before{
+      left:30px;
+      top:-20px;
+      width: 154px;
+      height: 130px;
+    }
+  }
+  &__text{
+    font: 400 28px / 44px $font-default;
+    opacity: 0.6;
+  }
+}
