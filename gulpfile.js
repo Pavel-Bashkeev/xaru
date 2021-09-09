@@ -19,7 +19,7 @@ const ttf2woff = require('gulp-ttf2woff');
 const ttf2woff2 = require('gulp-ttf2woff2');
 const cleanCss = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
-// const webpConv = require('gulp-webp');
+const webpConv = require('gulp-webp');
 const newer = require('gulp-newer');
 const del = require('del');
 const sprite = require('gulp-svg-sprite');
@@ -63,14 +63,14 @@ function images() {
               .pipe(newer('app/images/dest/'))
               .pipe(imagemin([
                      imagemin.mozjpeg({
-                            quality: 95,
+                            quality: 90,
                             progressive: true
                      }),
                      imagemin.optipng({
-                            optimizationLevel: 2
+                            optimizationLevel: 3
                      }),
               ]))
-              // .pipe(webpConv())
+              .pipe(webpConv())
               .pipe(dest('app/images/dest/'))
 }
 
