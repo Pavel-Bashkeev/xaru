@@ -11,7 +11,7 @@
 
 	<link rel="shortcut icon" href="./images/dest/favicon.svg" type="image/svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="stylesheet" href="./css/style.min.css" >
 	<title>XaRu</title>
 </head>
 
@@ -42,8 +42,7 @@
 				</div>
 				<div class="hero-right pos-rel">
 					<img src="./images/dest/sectionHero/hero-bg.png" alt="" class="hero-right__img db">
-					<svg fill="none" xmlns="http://www.w3.org/2000/svg"
-						class="hero-decor pos-ab">
+					<svg fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-decor pos-ab">
 						<path
 							d="M666 384.5C666 547.424 447.058 590 288 590C128.942 590 0 457.924 0 295C0 132.076 128.942 0 288 0C447.058 0 666 221.576 666 384.5Z"
 							fill="#1F8EFA" fill-opacity="0.5" />
@@ -387,14 +386,130 @@
 			</label>
 			<label>
 				<span class="form__label db">Message</span>
-				<textarea class="form__message" name="message" ></textarea>
+				<textarea class="form__message" name="message"></textarea>
 			</label>
-			
+
 			<button class="btn-reset form__btn button link-def link-def--small" type="submit">Send</button>
 		</form>
 	</div>
 	<script src="./js/particles.min.js"></script>
-	<script  src="./js/main.min.js"></script>
+	<script async>
+		particlesJS('particles-js',
+
+			{
+				"particles": {
+					"number": {
+						"value": 25,
+						"density": {
+							"enable": true,
+							"value_area": 800
+						}
+					},
+					"color": {
+						"value": "#1f8efa"
+					},
+					"shape": {
+						"type": "circle",
+						"stroke": {
+							"width": 0,
+							"color": "#000000"
+						},
+						"polygon": {
+							"nb_sides": 5
+						},
+						"image": {
+							"src": "img/github.svg",
+							"width": 100,
+							"height": 100
+						}
+					},
+					"opacity": {
+						"value": 0.5,
+						"random": false,
+						"anim": {
+							"enable": false,
+							"speed": 1,
+							"opacity_min": 0.1,
+							"sync": false
+						}
+					},
+					"size": {
+						"value": 3,
+						"random": true,
+						"anim": {
+							"enable": false,
+							"speed": 40,
+							"size_min": 0.1,
+							"sync": false
+						}
+					},
+					"line_linked": {
+						"enable": true,
+						"distance": 150,
+						"color": "#1f8efa",
+						"opacity": 0.4,
+						"width": 1
+					},
+					"move": {
+						"enable": true,
+						"speed": 6,
+						"direction": "none",
+						"random": false,
+						"straight": false,
+						"out_mode": "out",
+						"bounce": false,
+						"attract": {
+							"enable": false,
+							"rotateX": 600,
+							"rotateY": 1200
+						}
+					}
+				},
+				"interactivity": {
+					"detect_on": "canvas",
+					"events": {
+						"onhover": {
+							"enable": false,
+							"mode": "repulse"
+						},
+						"onclick": {
+							"enable": false,
+							"mode": "push"
+						},
+						"resize": true
+					},
+					"modes": {
+						"grab": {
+							"distance": 400,
+							"line_linked": {
+								"opacity": 1
+							}
+						},
+						"bubble": {
+							"distance": 400,
+							"size": 40,
+							"duration": 2,
+							"opacity": 8,
+							"speed": 3
+						},
+						"repulse": {
+							"distance": 200,
+							"duration": 0.4
+						},
+						"push": {
+							"particles_nb": 4
+						},
+						"remove": {
+							"particles_nb": 2
+						}
+					}
+				},
+				"retina_detect": true
+			}
+
+		);
+	</script>
+	<script src="./js/main.min.js"></script>
 </body>
 
 </html>

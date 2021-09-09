@@ -47,7 +47,6 @@ function styles() {
 
 function scripts() {
        return src([
-                     './node_modules/smoothscroll-polyfill/dist/smoothscroll.js',
                      './app/js/vendor/**/*.js',
               ])
               .pipe(babel({
