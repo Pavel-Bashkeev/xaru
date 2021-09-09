@@ -1,3 +1,3 @@
-particlesJS.load('particles-js', '../assets/particlesjs-config.json', function() {
+particlesJS.load('particles-js', '../data/particlesjs-config.json', function() {
   console.log('particles.js loaded - callback');
 });
