@@ -1,4 +1,4 @@
-
+window.addEventListener('DOMContentLoaded', () => {
 particlesJS('particles-js',
   
 {
@@ -113,3 +113,6 @@ particlesJS('particles-js',
 }
 
 );
+
+})
+
