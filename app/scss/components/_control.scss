@@ -16,7 +16,10 @@
 .control-item{
   max-width: 300px;
   &__icon{
-    margin-bottom: 37px;
+    margin: 0 auto 37px;
+    width: 149px;
+    height: 149px;
+
   }
   &__title{
     font: 500 36px / 57px $font-default;
