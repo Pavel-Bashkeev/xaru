@@ -395,6 +395,9 @@
       }
     }
   }
+  .close-btn {
+    transform: translateX(0);
+}
 }
 
 @media (max-width: 375px) {

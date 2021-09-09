@@ -11,9 +11,14 @@
   justify-content: center;
   .form{
     max-width: 600px;
-    background-color: #194b7c;
+    width: 100%;
+    background-color: #161E2E;
     border-radius: 20px;
-    padding: 20px 40px;
+    padding: 34px 86px 40px;
+    &__label{
+      font: 400 16px / 18px $font-second;
+      margin-bottom: 10px;
+    }
     &__input{
       width: 100%;
       margin-bottom: 30px;
@@ -25,34 +30,43 @@
       box-shadow: 0 4px 14px rgba($color: #000000, $alpha: .5);
       font: 400 20px/ 24px $font-second;
       color: $accent;
-
-      &::placeholder{
-        color: rgba($color: #000000, $alpha: .6)
+      background-color: #2F3B52;
+      &:focus{
+        border:1px solid #1F8EFA;
       }
       
     }
     &__message{
       resize: none;
       width: 100%;
-      height: 400px;
+      height: 272px;
       padding: 20px;
       border-radius: 5px;
       box-shadow: 0 4px 14px  rgba($color: #000000, $alpha: .5);
       border: none;
       font: 400 20px/ 24px $font-second;
       color: $accent;
-
+      background-color: #2F3B52;
       outline: none;
-      &::placeholder{
-        color: rgba($color: #000000, $alpha: .6)
+      &:focus{
+        border:1px solid #1F8EFA;
       }
-      
     }
     &__btn{
-      max-width: 320px;
+      max-width: 180px;
       width: 100%;
       margin: 30px auto 0;
       box-shadow: 0 4px 14px  rgba($color: #000000, $alpha: .5);
     }
   }
+}
+.close-btn{
+  width: 18px;
+  height: 18px;
+  @extend %bg-cover;
+  background-image: url('../images/dest/close.png');
+  margin-left: auto;
+  margin-bottom: 13px;
+  cursor: pointer;
+  transform: translateX(40px);
 }

@@ -1,5 +1,10 @@
 const btnLink = document.querySelectorAll('.btn-link');
 const modalForm = document.querySelector('.modal-form');
+const closeBtn = document.querySelector('.close-btn');
+closeBtn.addEventListener('click', ()=>{
+  modalForm.classList.add('hide');
+    document.body.classList.remove('hidden');
+})
 btnLink.forEach(item => {
   item.addEventListener('click' , showModalForm);
 
