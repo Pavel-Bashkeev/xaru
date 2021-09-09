@@ -9,12 +9,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
   .form{
     max-width: 600px;
-    background-color: #fff;
+    background-color: #194b7c;
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 40px;
     &__input{
       width: 100%;
       margin-bottom: 30px;
@@ -23,7 +22,14 @@
       height: 50px;
       padding: 0 20px;
       border-radius: 5px;
-      box-shadow: 0 0 4px 4px #000000;
+      box-shadow: 0 4px 14px rgba($color: #000000, $alpha: .5);
+      font: 400 20px/ 24px $font-second;
+      color: $accent;
+
+      &::placeholder{
+        color: rgba($color: #000000, $alpha: .6)
+      }
+      
     }
     &__message{
       resize: none;
@@ -31,9 +37,22 @@
       height: 400px;
       padding: 20px;
       border-radius: 5px;
-      box-shadow: 0 0 4px 4px #000000;
+      box-shadow: 0 4px 14px  rgba($color: #000000, $alpha: .5);
       border: none;
+      font: 400 20px/ 24px $font-second;
+      color: $accent;
+
       outline: none;
+      &::placeholder{
+        color: rgba($color: #000000, $alpha: .6)
+      }
+      
+    }
+    &__btn{
+      max-width: 320px;
+      width: 100%;
+      margin: 30px auto 0;
+      box-shadow: 0 4px 14px  rgba($color: #000000, $alpha: .5);
     }
   }
 }
