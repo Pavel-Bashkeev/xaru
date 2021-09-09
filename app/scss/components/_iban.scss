@@ -1,13 +1,23 @@
 .iban {
   margin-bottom: 300px;
+
+  &__container {
+    gap: 100px 0;
+  }
+
+  &__box {
+    width: 100%;
+  }
 }
 
 .iban-content {
   max-width: 755px;
+  margin-top: -40px;
 
 
   &__title {
-    margin-bottom: 45px;
+    max-width: 755px;
+    margin-left: 0;
 
     &::after {
       margin-right: auto;
@@ -23,8 +33,14 @@
 
   &__text {
     font: 400 24px / 38px $font-default;
-    margin-bottom: 55px;
     opacity: 0.6;
+
+    &--accent {
+      font: 400 24px / 38px $font-default;
+      opacity: 0.6;
+      color: $white;
+      margin-bottom: 55px;
+    }
   }
 }
 
@@ -59,13 +75,15 @@
   max-width: 788px;
   padding: 100px 0 0;
   z-index: 1;
+  margin-top: -18%;
 
   &__icon {
     z-index: 1;
     right: 105px;
     bottom: -92px;
-    filter:blur(150px)
-
+    filter: blur(150px);
+    width: 513px;
+    height: 408px;
   }
 
   &__bg {
@@ -74,7 +92,7 @@
   }
 
   &__item {
-    width: 544px;
+    max-width: 544px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);

@@ -1,0 +1,390 @@
+@media (max-width:1485px) {
+  .iban-content {
+    max-width: 755px;
+    margin-top: -40px;
+    order: 3;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .iban-decor {
+    margin-top: 0%;
+  }
+
+  .iban-content__title {
+    max-width: 755px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    &::after {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 1220px) {
+  .hero__container {
+    flex-direction: column-reverse;
+  }
+
+  .hero-descr__title {
+    font: 700 71px/71px "Neue Helvetica";
+    text-align: center;
+  }
+
+  .hero-descr__text {
+    text-align: center;
+  }
+
+  .hero__link {
+    margin: 0 auto;
+  }
+
+  .team-decor {
+    padding-left: 72px;
+    z-index: 1;
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .team-content {
+    max-width: 700px;
+    margin: 0 auto 50px;
+  }
+
+  .team-content__title {
+    text-align: center;
+  }
+
+  .team-content__title::after {
+    margin-left: auto;
+  }
+
+  .team-content__text {
+    font: 400 28px/44px "Neue Helvetica";
+    text-align: center;
+  }
+}
+
+@media (max-width:950px) {
+  .footer-copy {
+    width: 100%;
+    order: 3;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 27px 0 36px;
+  }
+
+  .dashboard-decor {
+    order: 2;
+  }
+
+  .dashboard__container {
+    justify-content: center;
+  }
+
+  .dashboard-content__title {
+    text-align: center;
+  }
+
+  .dashboard-content__text {
+    text-align: center;
+  }
+}
+
+@media (max-width:900px) {
+  .steps-item__text {
+    text-align: center;
+  }
+
+  .steps-item:nth-child(2) .steps-item__text {
+    padding-left: 0px;
+  }
+
+  .iban-content {
+    max-width: 755px;
+    margin-top: -40px;
+    order: 3;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .iban-decor {
+    margin-top: 0%;
+  }
+
+  .iban-content__title {
+    max-width: 755px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    &::after {
+      margin-left: auto;
+    }
+  }
+
+  .iban-content__text {
+    &--accent {
+      margin-top: 30px;
+      opacity: 1;
+      font: 500 16px / 25px $font-default;
+      color: $white;
+    }
+  }
+
+}
+
+@media (max-width: 730px) {
+  .card-content__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-content__item-text--accent {
+    margin: 17px 0px;
+  }
+
+  .card-content__info {
+    margin: 0 auto;
+  }
+
+  .card-content__decor {
+    margin: 0 auto;
+  }
+
+  .card-content__item-icon {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-descr__title {
+    font: 700 50px/50px "Neue Helvetica";
+  }
+
+  .hero-right {
+    margin-bottom: 70px;
+  }
+
+  .hero-descr__subtitle {
+    font: italic 500 26px/27px "Neue Helvetica";
+  }
+}
+
+@media (max-width:620px) {
+  .card-content__decor {
+    min-height: 494px;
+    width: 100%;
+  }
+
+  .card-content__decor-icon {
+    display: none;
+  }
+}
+
+@media (max-width:550px) {
+  .footer-list__item:not(:last-child) {
+    margin-right: 14px;
+  }
+
+  .logo {
+    &__img {
+      width: 37px;
+      height: 40px;
+    }
+
+    &__name {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .footer__container {
+    align-items: center;
+
+  }
+
+  .footer-list__link {
+    font: 400 13px/13px Roboto;
+  }
+
+  .hero {
+    margin-bottom: 200px;
+  }
+
+  .section-title {
+    font: 700 30px/30px "Neue Helvetica";
+  }
+
+  .card-content__item-text--accent {
+    font: 500 21px/24px "Neue Helvetica";
+  }
+
+  .card-content__item-text {
+    font: 400 14px/18px "Neue Helvetica";
+  }
+
+  .steps-item__title {
+    font: 500 18px/28px "Neue Helvetica";
+  }
+
+
+
+  .steps-item__delimiter {
+    width: 32px;
+    height: 32px;
+    margin: -18px auto 35px;
+
+    &::after {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .steps-item {
+    .steps-item__text {
+      font: 400 14px/18px "Neue Helvetica";
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .steps-item:nth-child(2) {
+    order: 3;
+
+    .steps-item__text {
+      font: 400 14px/18px "Neue Helvetica";
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .card-content__decor {
+    min-height: 350px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-content__decor-img.decor-dol-1 {
+    width: 14px;
+    height: 23px;
+    top: 119px;
+  }
+
+  .card-content__decor-img.decor-dol-2 {
+    width: 28px;
+    height: 47px;
+    bottom: 149px;
+  }
+
+  .card-content__decor-img.decor-dol-3 {
+    width: 25px;
+    height: 42px;
+    top: 47px;
+    left: 68px;
+  }
+
+  .card-content__decor-img.decor-euro-2 {
+    width: 43px;
+    height: 65px;
+    bottom: 101px;
+    left: 14px;
+  }
+
+  .control {
+    margin-bottom: 200px;
+  }
+
+  .card {
+    margin-bottom: 150px;
+  }
+
+  .dashboard-decor__icon {
+    width: 320px;
+    height: 420px;
+  }
+
+  .dashboard-decor__diagra {
+    max-width: 134px;
+    right: 9px;
+    bottom: 102px;
+  }
+
+  .dashboard-content__text {
+    font: 400 18px/24px "Neue Helvetica";
+    opacity: .6;
+  }
+
+  .dashboard-content__title::after {
+    margin-left: auto;
+  }
+
+  .dashboard {
+    margin-bottom: 150px;
+  }
+
+  .currencies-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .currencies-item__text {
+    font: 700 13px/14px "Neue Helvetica";
+  }
+
+  .currencies-item::before {
+    width: 25px;
+    height: 25px;
+    margin-right: 14px;
+    margin-top: -2px;
+  }
+
+  .currencies {
+    justify-content: center;
+  }
+
+  .iban-content__text {
+    font: 400 14px/18px "Neue Helvetica";
+    opacity: .6;
+  }
+
+  .team-decor {
+    padding-left: 0px;
+  }
+
+  .team-decor__light {
+    left: 0px;
+  }
+
+  .team-content__text {
+    font: 400 14px/18px "Neue Helvetica";
+  }
+
+  .iban {
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-descr__title {
+    font: 700 36px/36px "Neue Helvetica";
+  }
+
+  .hero-descr__subtitle {
+    font: italic 500 18px/18px "Neue Helvetica";
+  }
+
+  .card-content__decor {
+    min-height: 355px;
+    width: 100%;
+
+  }
+}

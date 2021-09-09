@@ -13,6 +13,7 @@
 }
 
 .card-content {
+  gap: 150px 30px;
   &__item {
     &:not(:last-child) {
       margin-bottom: 100px;

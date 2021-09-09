@@ -22,21 +22,21 @@
 
   &__text {
     font: 400 28px / 44px $font-default;
-    color: 0.6;
+    opacity: 0.6;
   }
 }
 
 .team-decor {
   padding-left: 72px;
   z-index: 1;
-
-  &__bg {
+  &__img{
+    z-index: 2;
+  }
+  &__light {
+    top: 47px;
+    left: 40px;
+    z-index: 1;
     filter: blur(150px);
   }
 
-  &__img {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 }

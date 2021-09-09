@@ -9,6 +9,9 @@
     left: 51%;
     }
   }
+  &__items{
+    gap:60px 30px;
+  }
 }
 .control-item{
   max-width: 300px;
