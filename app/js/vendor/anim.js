@@ -10,5 +10,5 @@ window.addEventListener('DOMContentLoaded', () => {
     animImg.src = `./images/dest/imagesAnim/${images[count]}`
     count == images.length ? count = 0 : count += 1;
   }
-  setInterval(showAnim, 41.222);
+  setInterval(showAnim, 33.33);
 });
