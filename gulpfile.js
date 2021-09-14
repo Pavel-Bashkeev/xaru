@@ -67,7 +67,7 @@ function images() {
                             progressive: true
                      }),
                      imagemin.optipng({
-                            optimizationLevel: 3
+                            optimizationLevel: 7
                      }),
               ]))
               // .pipe(webpConv())
