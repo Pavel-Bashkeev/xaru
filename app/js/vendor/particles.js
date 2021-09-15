@@ -1,6 +1,5 @@
-(function () {
-  const canvas = document.createElement('canvas');
-  canvas.classList.add('canvas')
+window.addEventListener('DOMContentLoaded', ()=>{
+  const canvas = document.querySelector('.canvas');
   const ctx = canvas.getContext('2d');
   let w = canvas.width = document.body.clientWidth;
   let h = canvas.height = document.body.clientHeight;
@@ -109,4 +108,6 @@
   }
 
   init()
-}())
+
+})
+    
