@@ -66,6 +66,7 @@
     top: 200px;
     right: 55px;
     z-index: 1;
+    animation: decor-1 3s infinite ease-in-out;
   }
 
   &-img.decor-dol-2 {
@@ -74,6 +75,8 @@
     bottom: 200px;
     right: 10px;
     z-index: 1;
+    animation: decor-1 3s infinite ease-in-out;
+    animation-delay: 0.5;
   }
 
   &-img.decor-dol-3 {
@@ -82,6 +85,8 @@
     top:80px;
   left: 78px;
   z-index: 1;
+  animation: decor-1 4s infinite ease-in-out;
+    animation-delay: 0.9;
   }
 
   &-img.decor-dol-4 {
@@ -90,6 +95,8 @@
     left: -17px;
     top: 12px;
     z-index: 1;
+    animation: decor-1 3.5s infinite ease-in-out;
+    animation-delay: 0.7;
   }
 
   &-img.decor-euro-1 {
@@ -98,6 +105,8 @@
     z-index: 1;
     top: -35px;
     right: 100px;
+    animation: decor-1 2.5s infinite ease-in-out;
+    animation-delay: 0.1;
   }
 
   &-img.decor-euro-2 {
@@ -106,6 +115,26 @@
     z-index: 1;
     bottom: 150px;
     left:30px;
+    animation: decor-1 5s infinite ease-in-out;
+    animation-delay: 1.4;
   }
 
+}
+
+@keyframes decor-1 {
+  0%{
+    transform: scale(0);
+  }
+  25%{
+    transform: scale(1.2);
+  }
+  50%{
+    transform: scale(0.6);
+  }
+  75%{
+    transform: scale(0.8);
+  }
+  100%{
+    transform: scale(0);
+  }
 }
