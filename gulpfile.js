@@ -123,7 +123,7 @@ function buildcopy() {
        return src([
                      'app/css/**/*.min.css',
                      'app/js/*.min.js',
-                     'app/data/**/*',
+                     'app/assets/**/*',
                      'app/images/dest/**/*',
                      'app/fonts/**/*',
                      'app/**/*.html',
