@@ -367,7 +367,7 @@
 			</ul>
 		</div>
 	</footer>
-	<div id="particles-js"></div>
+	
 
 
 	<div class="modal-form hide">
@@ -389,22 +389,10 @@
 			<button class="btn-reset form__btn button link-def link-def--small" type="submit">Send</button>
 		</form>
 	</div>
-	<canvas class="canvas"></canvas>
+	<div id="particles-js"></div>
+	<script src="./js/particles.min.js"></script>
+	<script src="./js/myParticles.min.js"></script>
 	<script src="js/main.min.js"></script>
-	<script>
-		document.addEventListener('mousemove', moveElemCardMouse);
-
-		function moveElemCardMouse(event) {
-			document.querySelectorAll('.card-content__decor-i').forEach(function (move) {
-
-				let moving_value = move.getAttribute("data-value");
-				let x = (event.clientX * moving_value) / 250;
-				let y = (event.clientY * moving_value) / 250;
-
-				move.style.transform = `translate(${x}px, ${y}px)`
-			})
-		}
-	</script>
 	<script>
 		async function submitForm() {
 			const modalForm = document.getElementsByClassName('modal-form');
