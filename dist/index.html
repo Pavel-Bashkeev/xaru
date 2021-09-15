@@ -214,21 +214,22 @@
 								transform="matrix(-0.953313 -0.301983 -0.301983 0.953313 336.54 288.317)" fill="#47CD74"
 								fill-opacity="0.4" />
 						</svg>
-						<img loading="lazy" src="./images/dest/sectionCard/card-bottom.png" alt=""
+						<img loading="lazy" src="./images/dest/sectionCard/card-bottom.png" alt="" data-value="-2"
 							class="card-content__decor-img pos-ab db card-bottom">
-						<img loading="lazy" src="./images/dest/sectionCard/card-top.png" alt="" class="card-content__decor-img pos-ab db card-top">
-						<img loading="lazy" src="./images/dest/sectionCard/decor-dol-1.png" alt=""
-							class="card-content__decor-img pos-ab db decor-dol-1">
-						<img loading="lazy" src="./images/dest/sectionCard/decor-dol-2.png" alt=""
-							class="card-content__decor-img pos-ab db decor-dol-2">
-						<img loading="lazy" src="./images/dest/sectionCard/decor-dol-3.png" alt=""
-							class="card-content__decor-img pos-ab db decor-dol-3">
-						<img loading="lazy" src="./images/dest/sectionCard/decor-dol-4.png" alt=""
-							class="card-content__decor-img pos-ab db decor-dol-4">
-						<img loading="lazy" src="./images/dest/sectionCard/decor-euro-1.png" alt=""
-							class="card-content__decor-img pos-ab db decor-euro-1">
-						<img loading="lazy" src="./images/dest/sectionCard/decor-euro-2.png" alt=""
-							class="card-content__decor-img pos-ab db decor-euro-2">
+						<img loading="lazy" src="./images/dest/sectionCard/card-top.png" alt="" data-value="6"
+							class="card-content__decor-img pos-ab db card-top">
+						<img loading="lazy" src="./images/dest/sectionCard/decor-dol-1.png" alt="" data-value="4"
+							class="card-content__decor-i pos-ab db decor-dol-1">
+						<img loading="lazy" src="./images/dest/sectionCard/decor-dol-2.png" alt="" data-value="-6"
+							class="card-content__decor-i pos-ab db decor-dol-2">
+						<img loading="lazy" src="./images/dest/sectionCard/decor-dol-3.png" alt="" data-value="8"
+							class="card-content__decor-i pos-ab db decor-dol-3">
+						<img loading="lazy" src="./images/dest/sectionCard/decor-dol-4.png" alt="" data-value="-4"
+							class="card-content__decor-i pos-ab db decor-dol-4">
+						<img loading="lazy" src="./images/dest/sectionCard/decor-euro-1.png" alt="" data-value="5"
+							class="card-content__decor-i pos-ab db decor-euro-1">
+						<img loading="lazy" src="./images/dest/sectionCard/decor-euro-2.png" alt="" data-value="-9"
+							class="card-content__decor-i pos-ab db decor-euro-2">
 					</div>
 				</div>
 			</div>
@@ -278,8 +279,10 @@
 						<ellipse rx="230.5" ry="228.5" transform="matrix(-0.953313 -0.301983 -0.301983 0.953313 470.665 403.222)"
 							fill="#47CD74" fill-opacity="0.6" />
 					</svg>
-					<img loading="lazy" src="./images/dest/sectionDashboard/dashboard.png" alt="" class="dashboard-decor__img db pos-ab">
-					<img loading="lazy" src="./images/dest/sectionDashboard/circleDiagram.png" alt="" class="dashboard-decor__diagra pos-ab">
+					<img loading="lazy" src="./images/dest/sectionDashboard/dashboard.png" alt=""
+						class="dashboard-decor__img db pos-ab">
+					<img loading="lazy" src="./images/dest/sectionDashboard/circleDiagram.png" alt=""
+						class="dashboard-decor__diagra pos-ab">
 				</div>
 				<div class="dashboard-content">
 					<h3 class="dashboard-content__title section-title">
@@ -317,8 +320,7 @@
 					</div>
 				</div>
 				<div class="iban-decor pos-rel">
-					<video class="video" src="./assets/video/video.mp4" loop='true' autoplay="true"
-					muted="muted"></video>
+					<video class="video" src="./assets/video/video.mp4" loop='true' autoplay="true" muted="muted"></video>
 				</div>
 			</div>
 		</section>
@@ -387,8 +389,6 @@
 			<button class="btn-reset form__btn button link-def link-def--small" type="submit">Send</button>
 		</form>
 	</div>
-	<script defer src="./js/particles.min.js"></script>
-	<script src="./js/myParticles.min.js"></script>
 	<script src="js/main.min.js"></script>
 	<script>
 		async function submitForm() {
@@ -397,9 +397,11 @@
 
 			const template = `Name: ${form.name.value}. Contact: ${form.contact.value}. Message: ${form.message.value}`;
 
-			const response = await fetch('https://api.telegram.org/bot1962823159:AAGq5FuTjJJzOIZ2X-9IsXLIe4JwzZO1kw0/sendMessage?chat_id=-577332112&text=' + template, {
-				method: 'POST',
-			});
+			const response = await fetch(
+				'https://api.telegram.org/bot1962823159:AAGq5FuTjJJzOIZ2X-9IsXLIe4JwzZO1kw0/sendMessage?chat_id=-577332112&text=' +
+				template, {
+					method: 'POST',
+				});
 
 			const json = await response.json();
 

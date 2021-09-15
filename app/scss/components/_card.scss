@@ -1,5 +1,6 @@
 .card {
-  margin-bottom: 300px;
+  margin-bottom: 100px;
+
   &__title {
     margin-bottom: 70px;
 
@@ -14,6 +15,7 @@
 
 .card-content {
   gap: 150px 30px;
+
   &__item {
     &:not(:last-child) {
       margin-bottom: 100px;
@@ -74,15 +76,14 @@
     bottom: 200px;
     right: 10px;
     z-index: 1;
-    // animation: decorMove 4s infinite ease-in-out;
   }
 
   &-i.decor-dol-3 {
     width: 40px;
     height: 61px;
-    top:80px;
-  left: 78px;
-  z-index: 1;
+    top: 80px;
+    left: 78px;
+    z-index: 1;
   }
 
   &-i.decor-dol-4 {
@@ -106,42 +107,7 @@
     height: 78px;
     z-index: 1;
     bottom: 150px;
-    left:30px;
+    left: 30px;
   }
 
-}
-
-@keyframes decorScale {
-  0%{
-    transform: scale(0);
-  }
-  25%{
-    transform: scale(1.2);
-  }
-  50%{
-    transform: scale(0.6);
-  }
-  75%{
-    transform: scale(0.8);
-  }
-  100%{
-    transform: scale(0);
-  }
-}
-@keyframes decorMove {
-  0%{
-    transform: translate(0px , 0px);
-  }
-  25%{
-    transform: translate(20px,20px);
-  }
-  50%{
-    transform: translate(-100%, 50px);
-  }
-  75%{
-    transform: translate(0, 20px);
-  }
-  100%{
-    transform: translate(0px , 0px);
-  }
 }

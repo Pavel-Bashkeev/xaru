@@ -10,3 +10,4 @@ function moveElemCardMouse(event){
     move.style.transform = `translate(${x}px, ${y}px)`
   })
 }
+console.dir(document.body)
