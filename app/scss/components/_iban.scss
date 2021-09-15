@@ -76,5 +76,8 @@
   z-index: 1;
   margin-top: -18%;
   width:100%;
-  min-height: 600;
+  border-radius: 50% ;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 120px #0a071b;
+  z-index: -1;
 }
