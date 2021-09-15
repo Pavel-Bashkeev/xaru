@@ -66,7 +66,7 @@
     top: 200px;
     right: 55px;
     z-index: 1;
-    animation: decor-1 3s infinite ease-in-out;
+    animation: decorScale 3s infinite ease-in-out;
   }
 
   &-img.decor-dol-2 {
@@ -75,7 +75,7 @@
     bottom: 200px;
     right: 10px;
     z-index: 1;
-    animation: decorMove 4s infinite ease-in-out;
+    // animation: decorMove 4s infinite ease-in-out;
   }
 
   &-img.decor-dol-3 {

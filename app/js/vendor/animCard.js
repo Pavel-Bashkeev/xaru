@@ -1,5 +1,5 @@
 document.addEventListener('mousemove', moveElemCard);
-
+document.addEventListener('scroll', moveElemCard)
 function moveElemCard(event){
   document.querySelectorAll('.card-content__decor-img').forEach(function(move){
 
