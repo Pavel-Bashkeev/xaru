@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
       particlesColor: 'rgba(31,142,250,0.5)',
       particlesLife: 60,
       radius: 3,
-      count: 160,
+      count: 80,
       speed: 0.9,
       lineLength: 260,
     }
