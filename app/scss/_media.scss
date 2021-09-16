@@ -271,6 +271,9 @@
 }
 
 @media (max-width: 420px) {
+  #particles-js{
+    display: none;
+  }
   .hero {
     padding-top: 50px;
   }
