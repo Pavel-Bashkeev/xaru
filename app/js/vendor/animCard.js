@@ -1,7 +1,13 @@
-document.addEventListener('mousemove', moveElemCardMouse);
+const cardContentDecor = document.querySelector('.card-content__decor');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 1300 && document.body.clientWidth > 500) {
+    document.addEventListener('mousemove', moveElemCardMouse);
+  }
+})
 
-function moveElemCardMouse(event){
-  document.querySelectorAll('.card-content__decor-i').forEach(function(move){
+
+function moveElemCardMouse(event) {
+  document.querySelectorAll('.card-content__decor-i').forEach(function (move) {
 
     let moving_value = move.getAttribute("data-value");
     let x = (event.clientX * moving_value) / 250;
