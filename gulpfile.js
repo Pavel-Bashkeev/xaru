@@ -47,6 +47,7 @@ function styles() {
 
 function scripts() {
        return src([
+                     './node_modules/particlesjs/dist/particles.min.js',
                      './app/js/vendor/**/*.js',
               ])
               .pipe(babel({

@@ -2,6 +2,7 @@ const cardContentDecor = document.querySelector('.card-content__decor');
 window.addEventListener('scroll', () => {
   if (window.pageYOffset > 1300 && document.body.clientWidth > 500) {
     document.addEventListener('mousemove', moveElemCardMouse);
+    console.log('work')
   }
 })
 

@@ -37,6 +37,7 @@
         "gulp-webp": "^4.0.1"
     },
     "dependencies": {
+        "particlesjs": "^2.2.3",
         "reset-css": "^5.0.1",
         "smoothscroll-polyfill": "^0.4.4"
     }
